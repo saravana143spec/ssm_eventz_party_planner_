@@ -13,7 +13,7 @@
     
     <style>
         :root {
-            /* Theme 1: Emerald Luxury (Default) */
+            /* Default Emerald Luxury Theme */
             --bg-primary: #040e0a;
             --bg-secondary: #0b2b20;
             --bg-card: rgba(15, 45, 34, 0.65);
@@ -105,12 +105,11 @@
             text-decoration: none;
         }
 
-        .logo-img {
+        .logo-svg {
             width: 50px;
             height: 50px;
             border-radius: 50%;
             border: 2px solid var(--accent-gold);
-            object-fit: cover;
             box-shadow: 0 0 15px var(--accent-glow);
         }
 
@@ -450,7 +449,7 @@
             text-shadow: 0 0 15px var(--accent-glow);
         }
 
-        /* Gallery Modal & Grid */
+        /* Gallery Grid */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -568,7 +567,7 @@
             margin-top: 20px;
         }
 
-        /* Fixed WhatsApp Floating Button */
+        /* Floating WhatsApp Button */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -603,10 +602,18 @@
     <!-- Navigation -->
     <nav class="navbar">
         <a href="#home" class="logo-container">
-            <svg class="logo-img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- EMBEDDED GOLD SSM EVENTZ LOGO SVG -->
+            <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="50" cy="50" r="48" fill="#000000" stroke="#d4af37" stroke-width="3"/>
-                <path d="M50 15 L58 35 L80 35 L62 48 L68 70 L50 56 L32 70 L38 48 L20 35 L42 35 Z" fill="#d4af37"/>
-                <text x="50" y="85" font-family="'Cinzel', serif" font-size="12" font-weight="bold" fill="#d4af37" text-anchor="middle">SSM EVENTZ</text>
+                <!-- Crown Icon -->
+                <path d="M35 38 L42 28 L50 35 L58 28 L65 38 L60 42 L40 42 Z" fill="#d4af37"/>
+                <circle cx="35" cy="37" r="2" fill="#ffd700"/>
+                <circle cx="50" cy="34" r="2" fill="#ffd700"/>
+                <circle cx="65" cy="37" r="2" fill="#ffd700"/>
+                <!-- Text SSM -->
+                <text x="50" y="62" font-family="'Cinzel', serif" font-size="20" font-weight="bold" fill="#d4af37" text-anchor="middle" letter-spacing="1">SSM</text>
+                <!-- Text EVENTZ -->
+                <text x="50" y="74" font-family="'Montserrat', sans-serif" font-size="7" font-weight="700" fill="#f7e7a9" text-anchor="middle" letter-spacing="1">EVENTZ</text>
             </svg>
             <div class="brand-text">
                 <h1>SSM Eventz</h1>
@@ -636,10 +643,18 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <!-- LARGE EMBEDDED LOGO SVG -->
         <svg class="hero-logo-large" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="48" fill="#000000" stroke="#d4af37" stroke-width="3"/>
-            <path d="M50 15 L58 35 L80 35 L62 48 L68 70 L50 56 L32 70 L38 48 L20 35 L42 35 Z" fill="#d4af37"/>
-            <text x="50" y="85" font-family="'Cinzel', serif" font-size="12" font-weight="bold" fill="#d4af37" text-anchor="middle">SSM EVENTZ</text>
+            <!-- Crown Icon -->
+            <path d="M35 38 L42 28 L50 35 L58 28 L65 38 L60 42 L40 42 Z" fill="#d4af37"/>
+            <circle cx="35" cy="37" r="2" fill="#ffd700"/>
+            <circle cx="50" cy="34" r="2" fill="#ffd700"/>
+            <circle cx="65" cy="37" r="2" fill="#ffd700"/>
+            <!-- Text SSM -->
+            <text x="50" y="62" font-family="'Cinzel', serif" font-size="20" font-weight="bold" fill="#d4af37" text-anchor="middle" letter-spacing="1">SSM</text>
+            <!-- Text EVENTZ -->
+            <text x="50" y="74" font-family="'Montserrat', sans-serif" font-size="7" font-weight="700" fill="#f7e7a9" text-anchor="middle" letter-spacing="1">EVENTZ</text>
         </svg>
 
         <div class="hero-badge"><i class="fa-solid fa-crown"></i> Complete Luxury Event Management</div>
@@ -655,4 +670,236 @@
     <!-- Services Section -->
     <section id="services" class="section">
         <div class="section-title">
-            <h3>Ou
+            <h3>Our Premium Services</h3>
+            <p>Tailored solutions designed for birthdays, corporate gatherings, and private celebrations.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-tent service-icon"></i>
+                <h4>Event Management</h4>
+                <p>Full-scale planning, venue layout, coordination, and execution from start to finish.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-cake-candles service-icon"></i>
+                <h4>Birthday Decoration</h4>
+                <p>Custom theme arches, 3D backdrops, balloon installations, and elegant cake tables.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-box-archive service-icon"></i>
+                <h4>Popcorn & Cotton Candy</h4>
+                <p>Live snack counters serving fresh popcorn and sweet cotton candy for your guests.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-compact-disc service-icon"></i>
+                <h4>DJ & Sound System</h4>
+                <p>High-energy DJ setups, intelligent lighting, and crystal-clear audio experiences.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-glass-water service-icon"></i>
+                <h4>Juice & Mocktail Bar</h4>
+                <p>Refreshing welcome drinks, fresh fruit juices, and custom party mocktails.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-camera-retro service-icon"></i>
+                <h4>Photography & Video</h4>
+                <p>Professional candid photographers, 4K videography, and cinematic event reels.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cost Estimator -->
+    <section id="calculator" class="section">
+        <div class="section-title">
+            <h3>Interactive Event Cost Estimator</h3>
+            <p>Customize your requirements below to calculate an instant budget estimate.</p>
+        </div>
+
+        <div class="calculator-container">
+            <div class="calc-inputs">
+                <div class="calc-group">
+                    <label for="eventType"><i class="fa-solid fa-champagne-glasses"></i> Event Category:</label>
+                    <select id="eventType" onchange="calculateBudget()">
+                        <option value="6000">Birthday Party (Standard Decor) - ₹6,000</option>
+                        <option value="12000" selected>Birthday Party (Luxury Theme Arch) - ₹12,000</option>
+                        <option value="18000">Baby Shower / Cradle Ceremony - ₹18,000</option>
+                        <option value="25000">Grand Anniversary / Engagement - ₹25,000</option>
+                    </select>
+                </div>
+
+                <div class="calc-group">
+                    <label for="guestRange"><i class="fa-solid fa-users"></i> Guest Count: <span id="guestVal" style="color:var(--accent-gold);">60</span> Guests</label>
+                    <input type="range" id="guestRange" min="20" max="300" step="10" value="60" oninput="calculateBudget()">
+                    <div class="range-val">
+                        <span>20 Guests</span>
+                        <span>300 Guests</span>
+                    </div>
+                </div>
+
+                <div class="calc-group">
+                    <label><i class="fa-solid fa-circle-plus"></i> Select Add-On Services:</label>
+                    <div class="addons-grid">
+                        <label class="addon-item">
+                            <input type="checkbox" class="addon-check" value="4500" checked onchange="calculateBudget()">
+                            <span>Professional Photography (+₹4,500)</span>
+                        </label>
+                        <label class="addon-item">
+                            <input type="checkbox" class="addon-check" value="3500" onchange="calculateBudget()">
+                            <span>Live Popcorn & Cotton Candy Stall (+₹3,500)</span>
+                        </label>
+                        <label class="addon-item">
+                            <input type="checkbox" class="addon-check" value="5000" onchange="calculateBudget()">
+                            <span>DJ Sound & Party Lights (+₹5,000)</span>
+                        </label>
+                        <label class="addon-item">
+                            <input type="checkbox" class="addon-check" value="3000" onchange="calculateBudget()">
+                            <span>Welcome Juice / Mocktail Bar (+₹3,000)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc-summary">
+                <div>
+                    <h4 style="font-family: var(--font-heading); color: var(--text-muted);">Estimated Investment</h4>
+                    <div class="total-price" id="displayTotal">₹16,500</div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Includes setup, material transportation, and on-site event manager.</p>
+                </div>
+
+                <button onclick="sendWhatsAppEstimate()" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 20px;">
+                    <i class="fa-brands fa-whatsapp"></i> Book This Estimate on WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="section-title">
+            <h3>Event Showcase</h3>
+            <p>A glimpse of our recent luxury decorations and event setups.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80" alt="Birthday Decor">
+                <div class="gallery-overlay">Birthday Arch Setup</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=600&q=80" alt="Luxury Party">
+                <div class="gallery-overlay">Luxury Lighting & Stage</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80" alt="Celebration Table">
+                <div class="gallery-overlay">Theme Table Styling</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" alt="DJ Event">
+                <div class="gallery-overlay">DJ Sound Experience</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="section-title">
+            <h3>Client Appreciation</h3>
+            <p>Read what our happy customers have to say about their special day.</p>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"SSM Eventz turned my daughter's 1st birthday into a fairytale! The balloon entrance arch and popcorn stall were hit among all guests."</p>
+                <div class="reviewer-name">Ramesh & Family</div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Very professional team. The cost calculator on their website gave an accurate estimate, and they executed everything right on time."</p>
+                <div class="reviewer-name">Kavitha M.</div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Excellent sound setup and theme decor for our anniversary celebration. Highly recommended in the region!"</p>
+                <div class="reviewer-name">Suresh Kumar</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <svg class="footer-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="48" fill="#000000" stroke="#d4af37" stroke-width="3"/>
+            <path d="M35 38 L42 28 L50 35 L58 28 L65 38 L60 42 L40 42 Z" fill="#d4af37"/>
+            <text x="50" y="62" font-family="'Cinzel', serif" font-size="20" font-weight="bold" fill="#d4af37" text-anchor="middle">SSM</text>
+            <text x="50" y="74" font-family="'Montserrat', sans-serif" font-size="7" font-weight="700" fill="#f7e7a9" text-anchor="middle">EVENTZ</text>
+        </svg>
+
+        <h3 style="font-family: var(--font-heading); color: var(--accent-gold);">SSM EVENTZ</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Luxury Event Planning & Complete Party Management</p>
+
+        <div class="contact-info">
+            <a href="tel:9566047449"><i class="fa-solid fa-phone"></i> +91 95660 47449</a>
+            <a href="https://wa.me/919566047449" target="_blank"><i class="fa-brands fa-whatsapp"></i> +91 95660 47449</a>
+            <a href="#"><i class="fa-solid fa-location-dot"></i> Tamil Nadu, India</a>
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 SSM Eventz. All Rights Reserved. Designed for Luxury Celebrations.
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919566047449?text=Hello%20SSM%20Eventz,%20I%20would%20like%20to%20book%20an%20event." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function changeTheme(themeName) {
+            if (themeName === 'emerald') {
+                document.documentElement.removeAttribute('data-theme');
+            } else {
+                document.documentElement.setAttribute('data-theme', themeName);
+            }
+        }
+
+        function calculateBudget() {
+            const eventBase = parseInt(document.getElementById('eventType').value) || 0;
+            const guests = parseInt(document.getElementById('guestRange').value) || 20;
+            document.getElementById('guestVal').textContent = guests;
+
+            let extraGuestCost = 0;
+            if (guests > 50) {
+                extraGuestCost = (guests - 50) * 40;
+            }
+
+            let addonsTotal = 0;
+            const checkboxes = document.querySelectorAll('.addon-check');
+            checkboxes.forEach(cb => {
+                if (cb.checked) {
+                    addonsTotal += parseInt(cb.value);
+                }
+            });
+
+            const grandTotal = eventBase + extraGuestCost + addonsTotal;
+            document.getElementById('displayTotal').textContent = '₹' + grandTotal.toLocaleString('en-IN');
+        }
+
+        function sendWhatsAppEstimate() {
+            const eventTypeSelect = document.getElementById('eventType');
+            const eventText = eventTypeSelect.options[eventTypeSelect.selectedIndex].text;
+            const guestCount = document.getElementById('guestRange').value;
+            const total = document.getElementById('displayTotal').textContent;
+
+            const phoneNumber = "919566047449";
+            const message = `Hello SSM Eventz!%0A%0A*I got an event estimate from your website:*%0A- *Category:* ${eventText}%0A- *Estimated Guests:* ${guestCount}%0A- *Calculated Budget:* ${total}%0A%0APlease let me know the availability and further booking details!`;
+
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }
+
+        calculateBudget();
+    </script>
+</body>
+</html>
